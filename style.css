@@ -1,0 +1,570 @@
+/* Reset dasar */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: black;
+  color: #333;
+}
+
+/* Header/Navbar */
+/* Container header jadi flex */
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+}
+
+/* Logo */
+.logo {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  font-size: 18px;
+  color: #007BFF;
+}
+
+.logo img {
+  height: 30px;
+  margin-right: 10px;
+}
+
+/* Menu navigasi */
+.nav-menu {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+/* List navigasi */
+.nav-menu nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-menu nav ul li {
+  margin-left: 20px;
+}
+
+.nav-menu nav ul li a {
+  text-decoration: none;
+  color: #f0f4f8;
+  font-weight: 500;
+  transition: 0.2s;
+}
+
+.nav-menu nav ul li a:hover {
+  color: #007BFF;
+}
+
+/* Tombol Masuk */
+.btn-masuk {
+  background-color: #007BFF;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 5px;
+  margin-left: 20px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+
+/* Hero Section */
+.hero {
+  position: relative;
+  height: 87vh;
+  background: url('img/gambarp.jpg') no-repeat center center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero .overlay {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.4);
+  z-index: 1;
+}
+
+.hero-content {
+  z-index: 2;
+  color: white;
+  padding: 0 20px;
+}
+
+.hero-content h1 {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.btn-start {
+  background-color: #17C3B2;
+  padding: 12px 24px;
+  border-radius: 8px;
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.btn-start:hover {
+  background-color: #11999E;
+}
+
+/* style 3 */
+/* Section 3 Pilar */
+.pilar {
+  padding: 80px 20px;
+  background-color: black;
+}
+
+.container-pilar {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: #f1f7ff;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  padding: 30px;
+  flex: 1;
+  min-width: 300px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card .icon {
+  font-size: 28px;
+  margin-bottom: 15px;
+  color: #007BFF;
+}
+
+.card h3 {
+  font-size: 20px;
+  color: #111;
+  margin-bottom: 15px;
+}
+
+.card p, .card ul {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.5;
+}
+
+.card ul {
+  padding-left: 20px;
+}
+
+/* tentang Kelas */
+.tentang-kelas {
+  background-color: black;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.container-Tentang {
+  max-width: 1200px;
+  margin: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  
+}
+
+
+.tentang-img img {
+  width: 300px;
+  border-radius: 12px;
+  justify-content: center;
+  box-shadow: 0 10px 15px white;
+}
+
+
+.tentang-text p {
+  font-size: 18px;
+  color: white;
+  line-height: 1.7;
+  margin-bottom: 30px;
+}
+
+/* style 4 */
+/* Section Change Maker */
+.change-maker {
+  background-color: black;
+  padding: 80px 20px;
+}
+
+.container-change {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 40px;
+}
+
+.change-img img {
+  width: 300px;
+  border-radius: 12px;
+  box-shadow: 0 10px 15px white;
+}
+
+.change-text {
+  flex: 1;
+}
+
+.change-text h2 {
+  font-size: 30px;
+  color: #007BFF;
+  margin-bottom: 20px;
+}
+
+.change-text p {
+  font-size: 18px;
+  color: white;
+  line-height: 1.7;
+  margin-bottom: 30px;
+}
+
+.btn-profile {
+  background-color: #007BFF;
+  color: white;
+  padding: 12px 20px;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn-profile:hover {
+  background-color: #0056b3;
+}
+
+/* style css 5 */
+/* Section Program Studi */
+.program {
+  background-color: black;
+  padding: 80px 40px;
+  text-align: center;
+}
+
+.program .title {
+  font-size: 28px;
+  color: blue;
+  margin-bottom: 50px;
+}
+
+.program-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 80px;
+  justify-content: center;
+}
+
+.program-card {
+  background-color: #333;
+  padding: 30px 40px;
+  border-radius: 14px;
+  width: 300px;
+  transition: 0.3s;
+  box-shadow: 0 5px 15px white;
+}
+
+.program-card:hover {
+  transform: translateY(-5px);
+  background-color: rgb(35, 35, 151);
+}
+
+.program-card img {
+  width: 230px;
+  height: 120px;
+  margin-bottom: 30px;
+}
+
+.program-card p {
+  font-size: 12px;
+  color: white;
+  margin: 0;
+}
+
+
+/* style css 6 */
+/* Struktur Organisasi */
+.struktur {
+  background-color: black;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.struktur-container {
+  max-width: 1000px;
+  margin: auto;
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.struktur .title {
+  font-size: 28px;
+  color: blue;
+  margin-bottom: 40px;
+}
+
+
+
+.struktur-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 5px 10px white;
+  width: 220px;
+  transition: 0.3s;
+}
+
+.struktur-card:hover {
+  transform: translateY(-5px);
+}
+
+.struktur-card img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.struktur-card h3 {
+  font-size: 18px;
+  color: #007BFF;
+  margin-bottom: 5px;
+}
+
+.struktur-card p {
+  font-size: 15px;
+  color: #666;
+}
+
+
+/* stlye css 7 */
+/* Media Galeri */
+.media {
+  background-color: black;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.media .title {
+  font-size: 28px;
+  color: #111;
+  margin-bottom: 50px;
+}
+
+.media-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.media-item {
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  background: #f5faff;
+  transition: transform 0.3s;
+}
+
+.media-item:hover {
+  transform: scale(1.03);
+}
+
+.media-item img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  display: block;
+}
+
+.media-item p {
+  padding: 10px;
+  font-size: 15px;
+  color: #333;
+}
+
+
+/* style css akhir */
+/* Footer */
+.footer {
+  background-color: #003366;
+  color: #ffffff;
+  padding: 50px 20px 20px 20px;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.footer h3 {
+  margin-bottom: 15px;
+  font-size: 20px;
+  color: #ffffff;
+}
+
+.footer p {
+  margin-bottom: 8px;
+  font-size: 15px;
+}
+
+.footer-right ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-right ul li {
+  margin-bottom: 8px;
+}
+
+.footer-right a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.footer-right a:hover {
+  color: #00c3ff;
+}
+
+.copyright {
+  text-align: center;
+  font-size: 14px;
+  margin-top: 30px;
+  color: #ccc;
+}
+
+
+/* style css gambar animasi */
+
+.media {
+  padding: 60px 20px;
+  background: black;
+  text-align: center;
+  animation: fadeInUp 1s ease-in-out;
+}
+
+.media .title {
+  font-size: 32px;
+  color: blue;
+  margin-bottom: 40px;
+}
+
+.media-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.media-item {
+  background: #fff;
+  padding: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.3s;
+  border-radius: 8px;
+}
+
+.media-item:hover {
+  transform: scale(1.05);
+}
+
+.media-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.media-item p {
+  margin-top: 10px;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+/* Modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 99;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.modal-content {
+  background-color: #fff;
+  margin: 10% auto;
+  padding: 20px;
+  width: 80%;
+  max-width: 700px;
+  border-radius: 10px;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Scroll Animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.logo img {
+  height: 30px;
+  vertical-align: 10px;
+  margin-right: 8px;
+}
